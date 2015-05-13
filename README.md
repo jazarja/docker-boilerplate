@@ -19,6 +19,7 @@ HOW-TO
 -------
 
 1. Add bridged adapter on boot2docker on Windows
+
 			Shut down boot2docker
 			Open the VirtualBox dashboard
 			Edit the Settings
@@ -58,7 +59,8 @@ HOW-TO
 			REDIS_NAME=/node/redis
 			-----------------
 4. How to install docker UI
-		    docker run -d -p 9000:9000 --privileged -v /var/run/docker.sock:/var/run/docker.sock dockerui/dockerui
+
+			docker run -d -p 9000:9000 --privileged -v /var/run/docker.sock:/var/run/docker.sock dockerui/dockerui
 
 CREDITS
 -------
