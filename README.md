@@ -68,10 +68,10 @@ HOW-TO
 			2. In vagrant folder, type:
 						vagrant init yungsang/coreos
 						vagrant up
-			4. Make sure ssh.exe is in your PATH variable (download GIT if don't have SSH around)			
-			3. Connect to CoreOS:
+			3. Make sure ssh.exe is in your PATH variable (download GIT if don't have SSH around)			
+			4. Connect to CoreOS:
 						vagrant ssh			
-			4. Optional, create user in CoreOS for easy file upload (vis WinSCP)
+			5. Optional, create user in CoreOS for easy file upload (vis WinSCP)
 						sudo useradd -p password -U -m username -G sudo		
 			
 CREDITS
