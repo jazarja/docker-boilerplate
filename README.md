@@ -1,10 +1,12 @@
 BUILD
 -----
 
+
+For every desired module, browse to its folder (e.g: node) and type		
+		
 		docker build -t <name> .
 		
-    docker run -d -p 9000:9000 --privileged -v /var/run/docker.sock:/var/run/docker.sock dockerui/dockerui
-    
+Run docker container:
     docker run -d --name redis -p 6379:6379 redis
     docker run -d --name mongodb -p 27017:27017 -v /opt/mongodb:/data/db mongodb
     docker run -d --name neo4j --privileged -p 7474:7474 -p 1337:1337 -v /home/core:/var/lib/neo4j/data neo4j
@@ -56,6 +58,8 @@ HOW-TO
 			REDIS_PORT_6379_TCP_PROTO=tcp
 			REDIS_NAME=/node/redis
 			-----------------
+4. How to install docker UI
+		    docker run -d -p 9000:9000 --privileged -v /var/run/docker.sock:/var/run/docker.sock dockerui/dockerui
 
 CREDITS
 -------
