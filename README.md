@@ -45,15 +45,15 @@ HOW-TO
 			Configure node.js to look for environment variable 
 			
 			-- Example environment variables on node container ---
-			MONGODB_PORT=tcp://172.17.0.9:27017
-			MONGODB_PORT_27017_TCP=tcp://172.17.0.9:27017
-			MONGODB_PORT_27017_TCP_ADDR=172.17.0.9
+			MONGODB_PORT=tcp://{your-ip}:27017
+			MONGODB_PORT_27017_TCP=tcp://{your-ip}:27017
+			MONGODB_PORT_27017_TCP_ADDR={your-ip}
 			MONGODB_PORT_27017_TCP_PORT=27017
 			MONGODB_PORT_27017_TCP_PROTO=tcp
 			MONGODB_NAME=/node/mongodb
-			REDIS_PORT=tcp://172.17.0.15:6379
-			REDIS_PORT_6379_TCP=tcp://172.17.0.15:6379
-			REDIS_PORT_6379_TCP_ADDR=172.17.0.15
+			REDIS_PORT=tcp://{your-ip}:6379
+			REDIS_PORT_6379_TCP=tcp://{your-ip}:6379
+			REDIS_PORT_6379_TCP_ADDR={your-ip}
 			REDIS_PORT_6379_TCP_PORT=6379
 			REDIS_PORT_6379_TCP_PROTO=tcp
 			REDIS_NAME=/node/redis
