@@ -62,6 +62,18 @@ HOW-TO
 
 			docker run -d -p 9000:9000 --privileged -v /var/run/docker.sock:/var/run/docker.sock dockerui/dockerui
 
+5. How to install CoreOS on Windows
+			
+			1. Download vagrant for Windows, http://www.vagrantup.com/downloads.html
+			2. In vagrant folder, type:
+						vagrant init yungsang/coreos
+						vagrant up
+			4. Make sure ssh.exe is in your PATH variable (download GIT if don't have SSH around)			
+			3. Connect to CoreOS:
+						vagrant ssh			
+			4. Optional, create user in CoreOS for easy file upload (vis WinSCP)
+						sudo useradd -p password -U -m username -G sudo		
+			
 CREDITS
 -------
 
